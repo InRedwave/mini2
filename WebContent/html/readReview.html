@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>Insert title here</title>
+		<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css">			
+		<script src="https://cdn.jsdelivr.net/npm/jquery@3.6.0/dist/jquery.min.js"></script>		
+		<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"></script>	
+		<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/js/bootstrap.bundle.min.js"></script>
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+		<style>
+			/* 글꼴 */
+			@font-face {
+            font-family: 'NanumBarunGothic';
+            font-style: normal;
+            font-weight: 400;
+            src: url('//cdn.jsdelivr.net/font-nanumlight/1.0/NanumBarunGothicWeb.eot');
+            src: url('//cdn.jsdelivr.net/font-nanumlight/1.0/NanumBarunGothicWeb.eot?#iefix') format('embedded-opentype'), url('//cdn.jsdelivr.net/font-nanumlight/1.0/NanumBarunGothicWeb.woff') format('woff'), url('//cdn.jsdelivr.net/font-nanumlight/1.0/NanumBarunGothicWeb.ttf') format('truetype');
+         	}
+         
+	         @font-face {
+	            font-family: 'NanumBarunGothic';
+	            font-style: normal;
+	            font-weight: 700;
+	            src: url('//cdn.jsdelivr.net/font-nanumlight/1.0/NanumBarunGothicWebBold.eot');
+	            src: url('//cdn.jsdelivr.net/font-nanumlight/1.0/NanumBarunGothicWebBold.eot?#iefix') format('embedded-opentype'), url('//cdn.jsdelivr.net/font-nanumlight/1.0/NanumBarunGothicWebBold.woff') format('woff'), url('//cdn.jsdelivr.net/font-nanumlight/1.0/NanumBarunGothicWebBold.ttf') format('truetype')
+	         }
+	         
+	         @font-face {
+	            font-family: 'NanumBarunGothic';
+	            font-style: normal;
+	            font-weight: 300;
+	            src: url('//cdn.jsdelivr.net/font-nanumlight/1.0/NanumBarunGothicWebLight.eot');
+	            src: url('//cdn.jsdelivr.net/font-nanumlight/1.0/NanumBarunGothicWebLight.eot?#iefix') format('embedded-opentype'), url('//cdn.jsdelivr.net/font-nanumlight/1.0/NanumBarunGothicWebLight.woff') format('woff'), url('//cdn.jsdelivr.net/font-nanumlight/1.0/NanumBarunGothicWebLight.ttf') format('truetype');
+	         }
+	         
+	         .nanumbarungothic * {
+	            font-family: 'NanumBarunGothic', sans-serif;
+	         }
+			
+			* {
+				padding: 0px;
+				margin: 0px;
+			}
+			
+			hr {
+				height: 0.7px;
+				background-color: grey;
+			}
+			
+			.checked {
+			  color: orange;
+			}
+			
+			#readReview > * {
+				width: 90%;
+				margin: 0px auto;
+			}
+		</style>
+	</head>
+	<body>	
+		<div id="readReview" class="container-fluid d-flex flex-column" style="width:1440px">		
+			<div >
+				<div class="d-flex">
+					<h4 class="text-left text-muted">no.1&nbsp;</h4>
+					<h2 >냉장고 신제품 구매 리뷰</h2>					
+				</div>
+		 	</div>	
+		 	<hr style="height: 0.1px; background-color: grey"/>		
+				<div class="d-flex mt-2">
+					<h5>작성일 |&nbsp;</h5>
+					<h5>&nbsp;2022-11-24&nbsp;&nbsp;</h5>					
+					<h5>&nbsp;작성자 |&nbsp;</h5>					
+					<h5>&nbsp;otioti&nbsp;</h5>								
+				</div>	
+				<div class="d-flex justify-content-end mb-2">
+					<button type="button" class="btn btn-outline-dark btn-sm" style="border-radius:30px">수정</button>	
+					<button type="button" class="btn btn-outline-dark btn-sm" style="border-radius:30px">삭제</button>	
+				</div>
+				<hr/>			
+				<div class="d-flex mt-2">
+					<h6 class="text-left text-muted">냉장고&nbsp;</h6>
+					<h6 class="text-left text-muted">>&nbsp;</h6>
+					<h6 class="text-left text-muted">양문형 냉장고</h6>
+				</div>		
+				<div class="d-flex justify-content-end">					
+					<span class="fa fa-star checked"></span>
+					<span class="fa fa-star checked"></span>
+					<span class="fa fa-star checked"></span>
+					<span class="fa fa-star"></span>
+					<span class="fa fa-star"></span>
+					<h5 class="text-left">(3.0)</h5>
+				</div>					
+			<div class="d-flex flex-column py-10">
+				<h3 class="align-self-center"> 냉장고 좋아요 짱! 추천합니다~ </h3>			
+			</div>
+			<hr style="height:0.1px; background-color: grey"/>		
+			<div class="d-flex justify-content-center my-3" >
+				<div class="d-flex justify-content-center" style="width:90%">
+					<button type="button" class="btn btn-primary btn-sm" style="border-radius:20px; width:10%">확인</button>										  						
+				</div>
+			</div>
+			<hr/>
+			<div class="d-flex flex-column mt-2">
+				<h4>Comment</h4>				
+				<div id="reviewComment" class="d-flex jutify-content-between">
+					<div class="d-flex col-9">
+						<h5>우와 예쁘네요 저도 사야겠어요^_^</h5>
+					</div>
+					<div class="d-flex text-muted jutify-content-end">
+						<h6>&nbsp;&nbsp;작성일 |&nbsp;</h6>
+						<h6>&nbsp;2022-11-26&nbsp;</h6>					
+						<h6>&nbsp;작성자 |&nbsp;</h6>					
+						<h6>&nbsp;my&nbsp;</h6>		
+					</div>						
+				</div>	
+				<div id="reviewComment" class="d-flex jutify-content-between">
+					<div class="d-flex col-9">
+						<h5>허거덩 즉시구매</h5>
+					</div>
+					<div class="d-flex text-muted jutify-content-end">
+						<h6>&nbsp;&nbsp;작성일 |&nbsp;</h6>
+						<h6>&nbsp;2022-11-27&nbsp;</h6>					
+						<h6>&nbsp;작성자 |&nbsp;</h6>					
+						<h6>&nbsp;js&nbsp;</h6>		
+					</div>						
+				</div>	
+			</div>		
+		</div>
+	</body>
+</html>

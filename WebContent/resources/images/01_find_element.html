@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>Insert title here</title>
+		<!-- Latest compiled and minified CSS -->
+		<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css">
+		
+		<!-- jQuery library -->
+		<script src="https://cdn.jsdelivr.net/npm/jquery@3.6.0/dist/jquery.slim.min.js"></script>
+		
+		<!-- Popper JS -->
+		<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"></script>
+		
+		<!-- Latest compiled JavaScript -->
+		<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/js/bootstrap.bundle.min.js"></script>
+		<script>
+			function findElementById() {
+				//let p = window.document.getElementById("p1");
+				let p = document.querySelector("#p1");
+				console.log(p);
+			}
+			
+			function findElementByClass() {
+				//let collection = document.getElementsByClassName("class1");
+				let collection = document.querySelectorAll(".class1");
+				console.log(collection);
+				console.log(collection.length);
+				for (let i = 0; i < collection.length; i++) {
+					let p = collection.item(i);
+					console.log(p);
+				}
+				
+				collection.forEach(p => console.log(p));
+			}
+			
+			function findElementByTag() {
+				//let collection = document.getElementsByTagName("p");
+				let collection = document.querySelectorAll("p");
+				console.log(collection);
+				console.log(collection.length);
+				for (let i = 0; i < collection.length; i++) {
+					let p = collection.item(i);
+					console.log(p);
+				}
+				
+				collection.forEach(p => console.log(p));
+			}
+			
+			function findElementByChecked() {
+				let collection = document.querySelectorAll("input[name=skill]:checked");
+				collection.forEach(c => console.log(c));
+			}
+		</script>
+	</head>
+	<body>
+		<div class="card">
+        	<div class="card-header">
+            	Document - find element
+        	</div>
+
+        	<div class="card-body">
+	            <button onclick="findElementById()" class="btn btn-info btn-sm">ID로 찾기</button>
+	            <button onclick="findElementByClass()" class="btn btn-info btn-sm">Class로 찾기</button>
+	            <button onclick="findElementByTag()" class="btn btn-info btn-sm">Tag로 찾기</button>
+	            <button onclick="findElementByChecked()" class="btn btn-info btn-sm">체크된 것만 찾기</button>
+            	<hr/>
+	            <div class="d-flex">
+	                <p id="p1" class="border bg-success" style="width: 100px; height: 100px;"></p>
+	                <p class="class1 border bg-danger" style="width: 100px; height: 100px;"></p>
+	                <p class="class1 border bg-info" style="width: 100px; height: 100px;"></p>
+	            </div>
+            	<hr/>
+	            <div class="d-flex align-items-center">
+	                <div class="mr-3"><input type="checkbox" name="skill" value="java"/>java</div>
+	                <div class="mr-3"><input type="checkbox" name="skill" value="javascript"/>javascript</div> 
+	                <div class="mr-3"><input type="checkbox" name="skill" value="vue"/>vue</div> 
+	        	</div>
+        	</div>
+    	</div>
+	</body>
+</html>

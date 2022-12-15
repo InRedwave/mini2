@@ -1,0 +1,216 @@
+﻿<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>MY전자</title>
+		<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css">
+		<script src="https://cdn.jsdelivr.net/npm/jquery@3.6.0/dist/jquery.slim.min.js"></script>
+		<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"></script>
+		<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/js/bootstrap.bundle.min.js"></script>
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+		
+		<style>
+			/* 글꼴 */
+			@font-face {
+			  font-family: 'LotteMartDream';
+			  font-style: normal;
+			  font-weight: 400;
+			  src: url('//cdn.jsdelivr.net/korean-webfonts/1/corps/lottemart/LotteMartDream/LotteMartDreamMedium.woff2') format('woff2'), url('//cdn.jsdelivr.net/korean-webfonts/1/corps/lottemart/LotteMartDream/LotteMartDreamMedium.woff') format('woff');
+			}
+			
+			* {
+			 	font-family: 'LotteMartDream';
+				padding: 0px;
+				margin: 0px;
+				/*border: 1px solid black;*/
+			}
+
+            .wrapper {
+                width: 1440px;
+                margin: 0px auto;
+            }
+
+            .wrapperChild {
+                width: 95%;
+                margin: 0px auto;
+            }
+			
+			img {
+				display: block;
+				margin: 0px auto;
+			}
+
+			a {
+				color : black;
+			}
+
+            hr {
+                height: 1px;
+                background-color: black;
+            }
+            
+           	.carousel-inner img {
+		    width: 1440px;
+		    height: 600px;
+		  	}
+		  
+		  	.checked {
+			  color: orange;
+			}
+			
+			div > .banner{
+			  width: 80px;
+			  height: 80px;
+				font-size:100%;
+			  position: relative;
+			  animation: mymove infinite;
+			  animation-duration: 3s;
+			}
+			
+			@keyframes mymove {
+			  from {left: 0px;}
+			  to {left: 350px;}
+			}
+		</style>
+		
+	</head>
+	<body>
+		<div class="jumbotron text-center jumbotron-fluid bg-lightgrey" style="height:350px;">
+			<div class="row">
+			<div class="banner justify-content-start d-flex">
+				<div class="row d-flex">
+				  	<h1 class="text-warning">Open</h1>
+				   <h1 class="text-warning">Think</h1>
+				   <h1 class="text-warning">Innovation</h1>
+				</div>
+		    </div>
+		
+			<div class="row d-flex justify-content-center col-sm-12">			
+				<h1 class="text-dark grey" style="font-size:80px">MY 전자</h1>							
+			</div>
+			</div>
+		</div>				
+		<hr/>
+	
+		<div id="topNavi" class="wrapper">			
+			<nav class="navbar navbar-expand-lg navbar-dark bg-dark" style="width: 1440px;">
+			  <div class="container-fluid">
+			    <a class="navbar-brand" href="#">MY전자</a>
+				    
+		    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarColor02" aria-controls="navbarColor02" aria-expanded="false" aria-label="Toggle navigation">
+		      <span class="navbar-toggler-icon"></span>
+		    </button>
+		    
+		    <div class="collapse navbar-collapse" id="navbarColor02">
+		      <ul class="navbar-nav me-auto">
+		        <li class="nav-item">
+		          <a class="nav-link active" onclick="window.location.href='ej_Homepage_design.html'">Home
+		          </a>
+		        </li>
+		        <li class="nav-item">
+		          <a class="nav-link" onclick="window.location.href='homepage수정1.html'">Products</a>
+		        </li>
+		        <li class="nav-item">
+		          <a class="nav-link" onclick="window.location.href='Listpage.html'">QnA</a>
+		        </li>
+		        <li class="nav-item">
+		          <a class="nav-link" onclick="window.location.href='Listpage.html'">Review</a>
+		        </li>  
+		        <li class="nav-item">
+		          <a class="nav-link" onclick="window.location.href='회원정보.html'">MyPage</a>
+		        </li>        
+		     </ul>
+	 		</div>
+    	<form class="d-flex">
+	        <input class="form-control me-sm-2" type="text" placeholder="Search">
+	        <button class="btn btn-secondary my-2 my-sm-0" type="submit">Search</button>
+      	</form>    
+	    <div class="d-flex justify-content-end">
+			<button type="button" class="btn btn-dark my-2 my-sm-0" onclick="window.location.href='login_js.html'">Login</button>
+			<button type="button" class="btn btn-dark my-2 my-sm-0" onclick="window.location.href='ej_join.html'">Join</button>
+			</div>
+	  	</div>
+			</nav>
+	</div>		 
+		 <br/>
+	 
+	 <div id="demo" class="carousel slide" data-ride="carousel">
+		  <!-- Indicators -->
+		  <ul class="carousel-indicators">
+		    <li data-target="#demo" data-slide-to="0" class="active"></li>
+		    <li data-target="#demo" data-slide-to="1"></li>
+		    <li data-target="#demo" data-slide-to="2"></li>
+		    <li data-target="#demo" data-slide-to="3"></li>
+		  </ul>
+  
+		  <!-- The slideshow -->
+		  <div class="carousel-inner">
+		    <div class="carousel-item active">
+		      <img src="../images/carou1.png" alt="TV" width="1100" height="500">
+		    </div>
+		    <div class="carousel-item">
+		      <img src="../images/carou2.png" alt="Watch" width="1100" height="500">
+		    </div>
+		    <div class="carousel-item">
+		      <img src="../images/carou3.png" alt="Refrigerator" width="1100" height="500">
+		    </div><div class="carousel-item">
+		      <img src="../images/carou4.png" alt="Mobile" width="1100" height="500">
+		    </div>
+		  </div>
+		  
+		  <!-- Left and right controls -->
+		  <a class="carousel-control-prev" href="#demo" data-slide="prev">
+		    <span class="carousel-control-prev-icon"></span>
+		  </a>
+		  <a class="carousel-control-next" href="#demo" data-slide="next">
+		    <span class="carousel-control-next-icon"></span>
+		  </a>
+		</div>
+		<hr />
+		
+		<div id="contents" class="wrapper">
+			<div class="row">
+			<div class="d-flex col-sm-3">
+			<div class="list-group d-flex border-secondary">
+			  <a href="#" class="list-group-item border-dark bg-dark list-group-item-action active">Notice</a>
+			  <h6 class="list-group-item">[신제품 출시] MY flip 메종 마르지엘라 에디션</h6>
+			  <h6 class="list-group-item">[매장 상담 예약] 맞춤 상담을 예약하고 MY전자가 제안하는 라이프스타일을 직접 체험해보세요.</h6>
+			  <h6 class="list-group-item">[이벤트] OTI x MY전자 콜라보 상품 예약하고 다양한 이벤트에 참여해보세요.</h6>
+			  <h6 class="list-group-item">[공지] 2022 누적 판매 1위 MY전자</h6>
+			</div>				
+			</div>
+			
+			<div class="card border-secondary d-flex mb-4 col-sm-5 px-0" style="max-width: 60rem;">				
+			  <div class="card-header bg-dark text-white">오시는 길</div>
+			  <div class="card-body">
+			    <h4 class="card-title">MY전자</h4>
+			    <a href="https://goo.gl/maps/EZCKLvqxrKsis2Dy8"><img src="../images/map.png" alt="map" style="width:550px; height:250px;"></a><br/>
+			    <p class="card-text">서울시 종로구 창경궁로 254 4층 MY전자</p>
+			  </div>
+			</div>
+			
+			<div class="row col-sm-4 d-flex flex-column ml-1">
+			<div class="card text-white bg-dark d-flex mb-3">		
+			  <div class="card-body">
+			    <h4 class="card-title">고객센터</h4>
+			    <p class="card-text">운영시간 </p>
+			    <p class="card-text">&nbsp;월-금 09:00-18:00</p>
+			    <p class="card-text">&nbsp;토 09:00-14:00 / (일요일 휴무)</p>
+			    <p class="card-text">TEL 02) 123-4567</p>			    
+			  </div>
+			</div>
+			   
+			   <div class="card border-secondary bg-lightgrey mb-4" >
+					<div class="card-body">
+					  	<h4 class="card-title">협력사</h4>
+					  	<div class="row text-align: center"> 
+						  	<img src="../images/otilogo.png" style="width:100px; height:100px">
+							<img src="../images/kosalogo.png" style="width:100px; height:120px;">
+						</div>
+					</div>				
+			   </div>		 
+			</div>
+			</div>
+		</div>
+	</body>
+</html>
